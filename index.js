@@ -31,7 +31,7 @@ const ignores = [
 
                 for (let i = 0; i < 10; i++) {
                     let is_even = isEven(i);
-                    if (!is_even && (i % 4)) {
+                    if (!is_even && ((i % 4) == 0)) {
                         console.log(`FAIL ON # ${file}!`);
                         process.exit(1);
                     }
